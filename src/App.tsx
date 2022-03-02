@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Q1 } from "../src/interviewQuestions/Q1";
-import { Q2 } from "../src/interviewQuestions/Q2";
+import { Q1 } from "./interviewQuestions/Q1";
+import { Q2 } from "./interviewQuestions/Q2";
 
 function App() {
   return (
