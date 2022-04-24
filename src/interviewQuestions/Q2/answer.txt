@@ -1,0 +1,15 @@
+Question goals:
+    understand the setState compares memory refrences before modifying the state.
+
+Code Explanation:
+    setState function compares memory refrences between the current state refernece and the new state before updating the state.
+    In the "addTodo" function we take the state array, push another item into it, and update the state with the same array.
+    This array value has changed but still holds the same memory reference and the state will remain the same
+
+Solution:
+    Creating a new reference and using the spread operator:
+        {
+            const newVal = [...val, {value}]
+            setVal(newVal)
+        }
+    

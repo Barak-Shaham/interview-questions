@@ -1,0 +1,10 @@
+Question goals:
+    understand custom hooks & setState asynchronous attribute.
+
+Code Explanation:
+    useIncrement custom hook gives us the increment function and the counterValue.
+    Inside useIncrement we use setState which is asynchronous, so clicking on "increment" will only change the state to 1 and not to 3.
+    setCounter will be invoked 3 times but each time it will increase the val form 0 to 1
+
+Solution:
+ Using the prev state as an argument: setCounter( counter => counter + 1)

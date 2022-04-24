@@ -1,0 +1,9 @@
+Question goals:
+    understand the useEffect lifeCycle and the how to prevent an infinite loop.
+
+Code Explanation:
+    This code is supposed to count and display how many times the input has changed.
+    The issue is that the useEffect changes the state, which causing the useEffect to run again, which results in an infinite loop.
+
+Solution:
+    Placing [value] in the useEffect's dependency array 
